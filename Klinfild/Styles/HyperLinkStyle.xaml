@@ -2,6 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style TargetType="Hyperlink">
         <Setter Property="FontFamily" Value="15" />
-        <Setter Property="Foreground" Value="#B3BE9D" />
+        <Setter Property="Foreground" Value="Black" />
     </Style>
 </ResourceDictionary>
