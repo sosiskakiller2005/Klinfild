@@ -16,6 +16,7 @@
 
         <StackPanel Orientation="Horizontal">
             <Image Source="/Resources/logo.png" Width="200"/>
+            <Border Width="100"/>
             <TextBlock Text="Kleinfeld Bridal is a famous New York boutique of wedding dresses, best known as the venue for TLC's &#34;Say Yes to the Dress&#34; campaign" 
                        TextAlignment="Center" TextWrapping="Wrap" Width="380" 
                        Margin="10 10 0 0" FontSize="20" FontWeight="Thin"/>

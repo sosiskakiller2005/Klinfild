@@ -66,6 +66,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Views\Pages\BookPage.xaml.cs">
+      <DependentUpon>BookPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\AuthorisationWIndow.xaml.cs">
       <DependentUpon>AuthorisationWIndow.xaml</DependentUpon>
     </Compile>
@@ -154,6 +160,7 @@
       <DependentUpon>KlinfildModel.edmx</DependentUpon>
       <LastGenOutput>KlinfildModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Background2.png" />
     <Resource Include="Resources\logo2.png" />
     <Resource Include="Resources\Background.png" />
     <Resource Include="Resources\logo.png" />
@@ -161,9 +168,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Pages\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="Styles\ButtonStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -204,6 +209,14 @@
     <Page Include="Styles\TextBoxStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Pages\BookPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\StartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\AuthorisationWIndow.xaml">
       <SubType>Designer</SubType>

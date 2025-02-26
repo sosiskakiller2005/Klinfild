@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Klinfild.AppData;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,11 +23,12 @@ namespace Klinfild.Views.Windows
         public MenuWindow()
         {
             InitializeComponent();
+            FrameHelper.selectedFrame = MainFrm;
+            MainFrm.Navigate(new Pages.StartPage());
         }
 
         private void RequestsHl_Click(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void BoksHl_Click(object sender, RoutedEventArgs e)
