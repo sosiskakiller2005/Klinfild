@@ -31,7 +31,7 @@
         </StackPanel>
 
         <!--<Frame Name="ShopFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>-->
-        <ListBox Name="ShopLb" Grid.Column="1" Background="Transparent" BorderThickness="0">
+        <ListBox Name="ShopLb" Grid.Column="1" Background="Transparent" BorderThickness="0" MouseDoubleClick="ShopLb_MouseDoubleClick">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel></WrapPanel>

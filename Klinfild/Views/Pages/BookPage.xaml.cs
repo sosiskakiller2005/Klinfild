@@ -1,4 +1,5 @@
 ﻿using Klinfild.Model;
+using Klinfild.Views.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,6 +47,12 @@ namespace Klinfild.Views.Pages
         private void DateHl_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ShopLb_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            ProductInfoWindow productInfoWindow = new ProductInfoWindow((Product)ShopLb.SelectedItem);
+            productInfoWindow.ShowDialog();
         }
     }
 }

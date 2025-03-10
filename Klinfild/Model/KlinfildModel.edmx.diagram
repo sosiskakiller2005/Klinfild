@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="1f94b8e6741d40089eb63256d0e33bbe" Name="Diagram1">
         <EntityTypeShape EntityType="KlinfildDbModel.Category" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="KlinfildDbModel.Order" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KlinfildDbModel.Order" Width="1.5" PointX="5.5" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="KlinfildDbModel.OrderProduct" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="KlinfildDbModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="KlinfildDbModel.User" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
