@@ -1,4 +1,5 @@
 ﻿using Klinfild.AppData;
+using Klinfild.Views.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,6 +50,11 @@ namespace Klinfild.Views.Windows
         private void CompilersHl_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ProfileHl_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrm.Navigate(new ProfilePage());
         }
     }
 }

@@ -27,7 +27,7 @@
                 <Border Width="70"/>
                 <TextBlock><Hyperlink Name="GuestsBlocksHl" Click="GuestsBlocksHl_Click">ГОСТИНИЧНЫЕ БЛОКИ</Hyperlink></TextBlock>
                 <Border Width="70"/>
-                <TextBlock><Hyperlink Name="CompilersHl" Click="CompilersHl_Click">СОСТАВИТЕЛИ</Hyperlink></TextBlock>
+                <TextBlock><Hyperlink Name="ProfileHl" Click="ProfileHl_Click">ПРОФИЛЬ</Hyperlink></TextBlock>
             </StackPanel>
         </Grid>
         <Frame Name="MainFrm" Grid.Row="2" NavigationUIVisibility="Hidden"/>

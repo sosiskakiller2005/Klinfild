@@ -1,4 +1,5 @@
-﻿using Klinfild.Model;
+﻿using Klinfild.AppData;
+using Klinfild.Model;
 using Klinfild.Views.Windows;
 using System;
 using System.Collections.Generic;
@@ -29,14 +30,17 @@ namespace Klinfild.Views.Pages
             List<Product> products = _context.Product.ToList();
             ShopLb.ItemsSource = _context.Product.Where(p => p.CategoryId == 2).ToList();
         }
-
-        private void DressesHl_Click(object sender, RoutedEventArgs e)
+        private void ShopLb_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
+            ProductInfoWindow productInfoWindow = new ProductInfoWindow((Product)ShopLb.SelectedItem);
+            productInfoWindow.ShowDialog();
         }
-
         private void JewerlyHl_Click(object sender, RoutedEventArgs e)
         {
             ShopLb.ItemsSource = _context.Product.Where(p => p.CategoryId == 2).ToList();
+        }
+        private void DressesHl_Click(object sender, RoutedEventArgs e)
+        {
         }
 
         private void HotelsHl_Click(object sender, RoutedEventArgs e)
@@ -49,10 +53,9 @@ namespace Klinfild.Views.Pages
 
         }
 
-        private void ShopLb_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void BookBtn_Click(object sender, RoutedEventArgs e)
         {
-            ProductInfoWindow productInfoWindow = new ProductInfoWindow((Product)ShopLb.SelectedItem);
-            productInfoWindow.ShowDialog();
+            FrameHelper.selectedFrame.Navigate(new BookPage());
         }
     }
 }

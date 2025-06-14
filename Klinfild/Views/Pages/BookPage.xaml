@@ -49,5 +49,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <Border Height="10"/>
+        <Button Name="BookBtn" Content="Забронировать" Click="BookBtn_Click" Grid.Column="1" Margin="0 400 0 0"/>
     </Grid>
 </Page>
