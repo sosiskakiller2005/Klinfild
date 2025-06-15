@@ -8,7 +8,41 @@
       d:DesignHeight="780" d:DesignWidth="1300"
       Title="OrderPage">
 
-    <Grid>
-        
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".15*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Создание заказа" FontSize="30"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel>
+                <TextBlock Text="Дата:" Height="40" FontSize="25"/>
+                <Border Height="10"/>
+                <TextBlock Text="Сумма:" Height="40" FontSize="25"/>
+                <Border Height="10"/>
+                <TextBlock Text="Категория товара:" Height="40" FontSize="25"/>
+                <Border Height="10"/>
+                <TextBlock Text="Товар:" Height="40" FontSize="25"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <DatePicker Name="DateDp" Width="250"/>
+                <Border Height="10"/>
+                <TextBlock Name="AmountTbl"/>
+                <Border Height="10"/>
+                <ComboBox Name="CategoryCmb" SelectionChanged="CategoryCmb_SelectionChanged"/>
+                <Border Height="10"/>
+                <ComboBox Name="ProductCmb"/>
+                <Border Height="10"/>
+                <Button Name="AddBtn" Content="Создать" Click="AddBtn_Click"/>
+                <TextBox Name="QuantityTb" Visibility="Collapsed"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>
