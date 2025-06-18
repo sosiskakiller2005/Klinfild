@@ -22,8 +22,6 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel>
-                <TextBlock Text="Дата:" Height="40" FontSize="25"/>
-                <Border Height="10"/>
                 <TextBlock Text="Сумма:" Height="40" FontSize="25"/>
                 <Border Height="10"/>
                 <TextBlock Text="Категория товара:" Height="40" FontSize="25"/>
@@ -32,13 +30,11 @@
             </StackPanel>
 
             <StackPanel Grid.Column="1">
-                <DatePicker Name="DateDp" Width="250"/>
-                <Border Height="10"/>
                 <TextBlock Name="AmountTbl"/>
                 <Border Height="10"/>
                 <ComboBox Name="CategoryCmb" SelectionChanged="CategoryCmb_SelectionChanged"/>
                 <Border Height="10"/>
-                <ComboBox Name="ProductCmb"/>
+                <ComboBox Name="ProductCmb" />
                 <Border Height="10"/>
                 <Button Name="AddBtn" Content="Создать" Click="AddBtn_Click"/>
                 <TextBox Name="QuantityTb" Visibility="Collapsed"/>

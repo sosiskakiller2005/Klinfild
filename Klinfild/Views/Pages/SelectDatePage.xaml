@@ -1,0 +1,35 @@
+﻿<Page x:Class="Klinfild.Views.Pages.SelectDatePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Klinfild.Views.Pages"
+      xmlns:primitives="clr-namespace:System.Windows.Controls.Primitives;assembly=PresentationFramework"
+      xmlns:tp="clr-namespace:RoyT.TimePicker;assembly=RoyT.TimePicker"
+      
+      mc:Ignorable="d" 
+      d:DesignHeight="780" d:DesignWidth="1300"
+      Title="SelectDatePage">
+
+    <Page.Resources>
+        <!-- Увеличение шрифта для дней -->
+        <Style TargetType="primitives:CalendarDayButton">
+            <Setter Property="FontSize" Value="28"/>
+        </Style>
+        <!-- Увеличение шрифта для заголовков и кнопок -->
+        <Style TargetType="primitives:CalendarButton">
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+    </Page.Resources>
+    <Grid Margin="20">
+        <Viewbox Stretch="Uniform" Height="500" Width="900">
+            <StackPanel>
+
+                <Calendar Name="AppCalendar" Background="#FFFFA578" Foreground="Black" Margin="120 0 0 0"
+                   Height="auto" HorizontalAlignment="Left"/>
+                <tp:TimePickerSlider Name="OrderTp" Grid.Row="8" VerticalAlignment="Center" Width="500"/>
+                <Button Name="AddBtn" Content="Выбрать" Click="AddBtn_Click"/>
+            </StackPanel>
+        </Viewbox>
+    </Grid>
+</Page>

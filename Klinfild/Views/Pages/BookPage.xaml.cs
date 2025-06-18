@@ -55,7 +55,7 @@ namespace Klinfild.Views.Pages
 
         private void BookBtn_Click(object sender, RoutedEventArgs e)
         {
-            FrameHelper.selectedFrame.Navigate(new OrderPage());
+            FrameHelper.selectedFrame.Navigate(new SelectDatePage(ShopLb.SelectedItem as Product));
         }
     }
 }

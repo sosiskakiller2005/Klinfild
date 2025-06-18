@@ -30,6 +30,7 @@ namespace Klinfild.Views.Windows
 
         private void RequestsHl_Click(object sender, RoutedEventArgs e)
         {
+            MainFrm.Navigate(new BookPage());
         }
 
         private void BoksHl_Click(object sender, RoutedEventArgs e)
